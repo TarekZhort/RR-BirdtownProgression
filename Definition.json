@@ -1,0 +1,35 @@
+{
+    "manifestVersion": 5,
+    "id": "TarekZhort.NicksBirdtownProgressionAddOn",
+    "name": "TarekZhort Progression AddOn for NickB Birdtown",
+    "version": ".5",
+    "requires": [
+        {
+            "id": "railloader",
+            "notBefore": "1.7.2"
+        },
+        {
+            "id": "Zamu.StrangeCustoms",
+            "notBefore": "1.6.24103.2234"
+        },
+        {
+            "id": "nickb.nicksbirdtownbranchline",
+            "notBefore": "1.3",
+        },
+        {
+            "id": "NickB.TheStandardCatalogofLoadIDs",
+            "notBefore": "3.4"
+          },
+          {
+            "id": "AlinaNova21.AlinasMapMod",
+            "notBefore": "1.3.24087.634"
+          },
+    ],
+    "mixintos": {
+        "game-graph": [
+            "file(PatchIndustries.json)",
+            "file(PatchTrackspans.json)"
+        ],
+        "progressions": "file(AddProgressions.json)",
+    }
+}
