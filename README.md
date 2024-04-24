@@ -7,7 +7,7 @@ This is an addon mod which adds progression stepa for NickB's mod: [Birdtown v1.
 - Zamus RailLoader [v1.7.2](https://railroader.stelltis.ch/)
 - Zamus StrangeCustoms [Beta v1.6.24103.2234](https://railroader.stelltis.ch/mods/strange-customs)
 - Nick Bs Standard Catalog of LoadId's [v 3.4](https://sites.google.com/view/westerntrainzkgp/railroader-mods/the-standard-catalog-of-loadids?authuser=0)
-- Alinas Map Mod [V 1.3.24087.634](https://railroader.alinanova.dev/)
+- Alinas Map Mod [V 1.3.24087.634](https://railroader.alinanova.dev/) only used for the progressions. No track from this mod is needed
 - Nick Bs Birdtown Branchline [v1.3](https://sites.google.com/view/westerntrainzkgp/railroader-mods/nicks-birdtown-branch)
 
 ## Instalation:
