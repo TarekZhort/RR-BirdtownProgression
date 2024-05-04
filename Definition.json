@@ -2,7 +2,7 @@
     "manifestVersion": 5,
     "id": "TarekZhort.NicksBirdtownProgressionAddOn",
     "name": "TarekZhort Progression AddOn for NickB Birdtown",
-    "version": ".5",
+    "version": ".5.1",
     "requires": [
         {
             "id": "railloader",
