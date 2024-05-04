@@ -26,9 +26,10 @@ Drag the zip file on the **railloader.exe** for instalation
   - Renamed Bendorsey Brewery Malt, Hops and Grain unloading locations to Bendorsey Brewery R1 / R2
   - Renamed Birdtown House track Gasoline, Lumber and Misc unloading locations to Birdtown House Track R1
   - Renamed Ela Slaughterhouse Livestock Unloading and Ela Slaughterhouse Livestock Loading to Ela Slaughterhouse B1
-  - Addded repair capabilities to repair facility in Birdtown, it is employed via the Whittier Engine Service.
+- Addded repair capabilities to repair facility in Birdtown, this is linked to the Whittier Engine Service Industry.
 
-## TODO
+## Known issues
 
-- Fix for beer unloading showing which is still locked behind the progression.
-- Fix for birdtownrepair showing which is still locked behind the progression.
+- Not accessible industry areas are highlighted when hovering over waybills:
+  - Birdtown Brewery Beer Loading highlight also shows track which is still locked behind progression
+  - When hovering over East Whittier Repair Track the track in Birdtown is also highlighted even when Birdtown is still locked.
