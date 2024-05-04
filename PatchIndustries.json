@@ -37,9 +37,53 @@
           "end": "End"
         },
       },
+      "BirdTown_Repair_Track_1": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N71_to_Bird_Branch_N72",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N71_to_Bird_Branch_N72",
+          "distance": 1.0,
+          "end": "End"
+        }
+      },
+      "BirdTown_Repair_Track_2": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N73_to_Bird_Branch_N74",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N73_to_Bird_Branch_N74",
+          "distance": 1.0,
+          "end": "End"
+        }
+      }
     }
   },
+  // buggy fix to add the spans to whittier repair facility
   "areas": {
+    "whittier": {
+      "industries": {
+        "wh-e-engine": {
+          "components": {
+            // adding it to an existing repair component works
+            "rip": {
+              "trackSpans": [
+                {
+                  "$add": "BirdTown_Repair_Track_2"
+                },
+                {
+                  "$add": "BirdTown_Repair_Track_1"
+                }
+              ]
+            },
+          }
+        }
+      }
+    },
     "ela": {
       "industries": {
         // Nicks Birdtown Branch Line
