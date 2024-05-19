@@ -2,7 +2,7 @@
     "manifestVersion": 5,
     "id": "TarekZhort.NicksBirdtownProgressionAddOn",
     "name": "TarekZhort Progression AddOn for NickB Birdtown",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "requires": [
         {
             "id": "railloader",
@@ -25,6 +25,7 @@
             "notBefore": "1.3.24087.634"
           },
     ],
+    "loadAfter":["nickb.nicksbirdtownbranchline"],
     "mixintos": {
         "game-graph": [
             "file(PatchIndustries.json)",

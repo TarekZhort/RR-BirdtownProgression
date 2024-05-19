@@ -86,43 +86,6 @@
     },
     "ela": {
       "industries": {
-        // Nicks Birdtown Branch Line
-        "bendorsey_brewery": {
-          "components": {
-            "Bendorsey_Brewery_Malt_Unloading": {
-              "name": "Bendorsey Brewery R1 / R2"
-            },
-            "Bendorsey_Brewery_Hops_Unloading": {
-              "name": "Bendorsey Brewery R1 / R2"
-            },
-            "Bendorsey_Brewery_Grain_Unloading": {
-              "name": "Bendorsey Brewery R1 / R2"
-            },
-          }
-        },
-        "Birdtown_House_Track": {
-          "components": {
-            "Birdtown_House_Track_Gasoline_Unloading": {
-              "name": "Birdtown House Track R1"
-            },
-            "Birdtown_House_Track_Lumber_Unloading": {
-              "name": "Birdtown House Track R1"
-            },
-            "Birdtown_House_Track_Misc_Unloading": {
-              "name": "Birdtown House Track R1"
-            }
-          }
-        },
-        "Ela_Slaughterhouse": {
-          "components": {
-            "Ela_Slaugherhouse_Livestock_Unloading": {
-              "name": "Ela Slaughterhouse B1"
-            },
-            "Ela_Slaugherhouse_Meat_Loading": {
-              "name": "Ela Slaughterhouse B1"
-            }
-          }
-        },
         "Birdtown_Bridge": {
           "name": "Birdtown Bridge Site",
           "localPosition": {

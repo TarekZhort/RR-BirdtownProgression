@@ -1,7 +1,11 @@
 {
   "TarekZhort.NicksBirdtownProgressionAddOn": {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "changelog": [
+      {
+        "version": "1.1.1",
+        "desc": "HOTFIX to fix crashing loading of other mods: \n - Removed name changes to industry components"
+      },
       {
         "version": "1.1.0",
         "desc": "- Updated RailLoader dependancy to V 1.7.99.0 \n -Added update check"
