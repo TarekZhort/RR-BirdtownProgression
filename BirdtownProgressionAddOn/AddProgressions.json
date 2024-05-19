@@ -1,0 +1,417 @@
+{
+  // here are the mapfeatures defined that can be unlocked via progressing in company mode or sandbox
+  "mapFeatures": {
+    "wh-el": {
+      "trackGroupsEnableOnUnlock": {
+        "ela-brewery": true,
+        "birdtown": true
+      },
+      "defaultEnableInSandbox": true,
+      "unlockExcludeIndustries": {
+        "bendorsey_brewery": true,
+        "Ela_Slaughterhouse": true,
+        "Birdtown_Iron_Ore_Mine": true,
+        "Birdtown_House_Track": true,
+        "Atlas_Sulfuric_Acid": true,
+        "A.L._Cooke_Coal_Merchants_(Birdtown)": true,
+        "Birdtown_Bridge": true,
+        "Bendorsey_Brewery_Construction": true
+      },
+      "unlockIncludeIndustryComponents": {
+        "Birdtown_Bridge.site": true,
+        "Bendorsey_Brewery_Construction.repair-site": true,
+        "Bendorsey_Brewery_Construction.yard-site": true,
+        "Bendorsey_Brewery_Construction.upgrade-site": true
+      }
+    },
+    "bendorsey-brewery": {
+      "description": "Enable the track for the Bendorsey Brewery",
+      "prerequisites": {
+        "wh-el": true
+      },
+      "areasEnableOnUnlock": {},
+      "defaultEnableInSandbox": true,
+      "displayName": "Ela Brewery track",
+      "gameObjectsEnableOnUnlock": {},
+      "trackGroupsAvailableOnUnlock": {
+        "ela-brewery": true,
+        "ela-brewery-connection": true
+      },
+      "trackGroupsEnableOnUnlock": {
+        "ela-brewery-connection": true
+      },
+      "unlockExcludeIndustries": {},
+      "unlockIncludeIndustries": {
+        "bendorsey_brewery": true,
+        "Ela_Slaughterhouse": true
+      },
+      "unlockIncludeIndustryComponents": {}
+    },
+    "birdtown": {
+      "description": "Enable the Birdtown branchline",
+      "prerequisites": {
+        "wh-el": true
+      },
+      "areasEnableOnUnlock": {},
+      "defaultEnableInSandbox": true,
+      "displayName": "Birdtown Branchline",
+      "gameObjectsEnableOnUnlock": {},
+      "trackGroupsAvailableOnUnlock": {
+        "birdtown-bridge": true,
+        "birdtown": true
+      },
+      "trackGroupsEnableOnUnlock": {
+        "birdtown-bridge": true
+      },
+      "unlockExcludeIndustries": {},
+      "unlockIncludeIndustries": {
+        "Birdtown_Iron_Ore_Mine": true,
+        "Birdtown_House_Track": true,
+        "Atlas_Sulfuric_Acid": true,
+        "A.L._Cooke_Coal_Merchants_(Birdtown)": true
+      },
+      "unlockIncludeIndustryComponents": {}
+    },
+    "bendorsey-brewery-runaround": {
+      "description": "Enable the runaround track for the Bendorsey Brewery",
+      "prerequisites": {
+        "bendorsey-brewery": true
+      },
+      "areasEnableOnUnlock": {},
+      "defaultEnableInSandbox": true,
+      "displayName": "Ela Brewery runaround track",
+      "gameObjectsEnableOnUnlock": {},
+      "trackGroupsAvailableOnUnlock": {
+        "ela-brewery-run-around": true
+      },
+      "trackGroupsEnableOnUnlock": {
+        "ela-brewery-run-around": true
+      },
+      "unlockExcludeIndustries": {},
+      "unlockIncludeIndustries": {},
+      "unlockIncludeIndustryComponents": {}
+    },
+    "bendorsey-brewery-crossing": {
+      "description": "Enable the brewery crossing tracks for easy access to the beer outputs",
+      "prerequisites": {
+        "bendorsey-brewery": true
+      },
+      "areasEnableOnUnlock": {},
+      "defaultEnableInSandbox": true,
+      "displayName": "Brewery Beer Loading",
+      "gameObjectsEnableOnUnlock": {},
+      "trackGroupsAvailableOnUnlock": {
+        "ela-brewery-crossing": true,
+        "ela-brewery-beer-extention": true
+      },
+      "trackGroupsEnableOnUnlock": {
+        "ela-brewery-crossing": true,
+        "ela-brewery-beer-extention": true
+      },
+      "unlockExcludeIndustries": {},
+      "unlockIncludeIndustries": {},
+      "unlockIncludeIndustryComponents": {}
+    },
+    "ela-yard": {
+      "description": "Add a yard to Ela",
+      "prerequisites": {
+        "bendorsey-brewery": true
+      },
+      "areasEnableOnUnlock": {},
+      "defaultEnableInSandbox": true,
+      "displayName": "Ela Yard",
+      "gameObjectsEnableOnUnlock": {},
+      "trackGroupsAvailableOnUnlock": {
+        "ela-yard": true,
+      },
+      "trackGroupsEnableOnUnlock": {
+        "ela-yard": true,
+      },
+      "unlockExcludeIndustries": {},
+      "unlockIncludeIndustries": {},
+      "unlockIncludeIndustryComponents": {}
+    },
+    "ela-yard-headshunt": {
+      "description": "Add a headshunt to the Ela Yard",
+      "prerequisites": {
+        "ela-yard": true
+      },
+      "areasEnableOnUnlock": {},
+      "defaultEnableInSandbox": false,
+      "displayName": "Ela yard Headshunt",
+      "gameObjectsEnableOnUnlock": {},
+      "trackGroupsAvailableOnUnlock": {
+        "ela-yard-extention": true,
+      },
+      "trackGroupsEnableOnUnlock": {
+        "ela-yard-extention": true
+      },
+      "unlockExcludeIndustries": {},
+      "unlockIncludeIndustries": {},
+      "unlockIncludeIndustryComponents": {}
+    },
+  },
+  // this is for company mode
+  "progressions": {
+    // the scenario start
+    "ewh": {
+      "sections": {
+        "ela-brewery": {
+          "displayName": "Fix Bendorsey Brewery",
+          "description": "Fix the track and buildings belonging to the Bendorsey Brewery so they can restart their operations.",
+          "prerequisiteSections": {},
+          "deliveryPhases": [
+            {
+              "deliveries": [
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "mow-machinery",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 1,
+                  "count": 2,
+                  "load": "debris",
+                  "carTypeFilter": "GB*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "lumber-dimensional",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "bricks",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "glass",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "ties",
+                  "carTypeFilter": "FB*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "ballast",
+                  "carTypeFilter": "GS"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "rails",
+                  "carTypeFilter": "FM*"
+                },
+              ],
+              "cost": 1500,
+              "industryComponent": "Bendorsey_Brewery_Construction.repair-site"
+            }
+          ],
+          // disables mapFeatures
+          "disableFeaturesOnUnlock": {},
+          // enables mapFeatures
+          "enableFeaturesOnUnlock": {
+            "bendorsey-brewery": true
+          },
+          // mapFeatures shown when not purchased?
+          "enableFeaturesOnAvailable": {}
+        },
+        "ela-yard": {
+          "displayName": "Ela yard",
+          "description": "Add a yard to Ela for servicing the brewery and as a staging yard for the Birdtown Branchline.",
+          "prerequisiteSections": {
+            "ela-brewery": true
+          },
+          "deliveryPhases": [
+            {
+              "deliveries": [
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "mow-machinery",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "ties",
+                  "carTypeFilter": "FB*"
+                },
+                {
+                  "direction": 0,
+                  "count": 3,
+                  "load": "prefab-track-sections",
+                  "carTypeFilter": "FB*"
+                },
+                {
+                  "direction": 0,
+                  "count": 4,
+                  "load": "ballast",
+                  "carTypeFilter": "GS"
+                },
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "rails",
+                  "carTypeFilter": "FM*"
+                },
+              ],
+              "cost": 1000,
+              "industryComponent": "Bendorsey_Brewery_Construction.yard-site"
+            }
+          ],
+          // disables mapFeatures
+          "disableFeaturesOnUnlock": {},
+          // enables mapFeatures
+          "enableFeaturesOnUnlock": {
+            "ela-yard": true,
+            "ela-yard-headshunt": true
+          },
+          // mapFeatures shown when not purchased?
+          "enableFeaturesOnAvailable": {}
+        },
+        "bendorsey-brewery-upgrade": {
+          "displayName": "Bendorsey Brewery Upgrades",
+          "description": "Upgrade the track for the brewery to add a runaround and easier access to the loadingbays.",
+          "prerequisiteSections": {
+            "ela-brewery": true
+          },
+          "deliveryPhases": [
+            {
+              "deliveries": [
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "mow-machinery",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "prefab-track-sections",
+                  "carTypeFilter": "FB*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "ballast",
+                  "carTypeFilter": "GS"
+                }
+              ],
+              "cost": 500,
+              "industryComponent": "Bendorsey_Brewery_Construction.upgrade-site"
+            }
+          ],
+          // disables mapFeatures
+          "disableFeaturesOnUnlock": {},
+          // enables mapFeatures
+          "enableFeaturesOnUnlock": {
+            "bendorsey-brewery-crossing": true,
+            "bendorsey-brewery-runaround": true
+          },
+          // mapFeatures shown when not purchased?
+          "enableFeaturesOnAvailable": {}
+        },
+        "birdtown_bridge": {
+          "displayName": "Repair Birdtown Track & Bridge.",
+          "description": "The bridge between Ela and Birdtown was also damaged by the flood. Deliver bridge and track supplies to repair the branchline to Birdtown.",
+          "prerequisiteSections": {},
+          "deliveryPhases": [
+            {
+              "deliveries": [
+                {
+                  "direction": 0,
+                  "count": 5,
+                  "load": "concrete",
+                  "carTypeFilter": "XM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 4,
+                  "load": "gravel",
+                  "carTypeFilter": "GS"
+                },
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "rebar",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "lumber-dimensional",
+                  "carTypeFilter": "FM*"
+                }
+              ],
+              "cost": 1000,
+              "industryComponent": "Birdtown_Bridge.site"
+            },
+            {
+              "deliveries": [
+                {
+                  "direction": 0,
+                  "count": 7,
+                  "load": "bridge-section",
+                  "carTypeFilter": "FM*"
+                },
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "bridge-seats",
+                  "carTypeFilter": "FM*"
+                }
+              ],
+              "cost": 1000,
+              "industryComponent": "Birdtown_Bridge.site"
+            },
+            {
+              "deliveries": [
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "ties",
+                  "carTypeFilter": "FB*"
+                },
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "ballast",
+                  "carTypeFilter": "GS"
+                },
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "rails",
+                  "carTypeFilter": "FM*"
+                }
+              ],
+              "cost": 1000,
+              "industryComponent": "Birdtown_Bridge.site"
+            }
+          ],
+          // disables mapFeatures
+          "disableFeaturesOnUnlock": {
+            "ela-yard-headshunt": true
+          },
+          // enables mapFeatures
+          "enableFeaturesOnUnlock": {
+            "birdtown": true,
+            "ela-yard-bridge": true
+          },
+          // mapFeatures shown when not purchased?
+          "enableFeaturesOnAvailable": {}
+        }
+      }
+    }
+  }
+}

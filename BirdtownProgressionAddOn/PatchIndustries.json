@@ -1,0 +1,187 @@
+{
+  "tracks": {
+    "spans": {
+      "Bendorsey_Brewery_Repair_Site": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N98_to_Bird_Branch_N99",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N98_to_Bird_Branch_N99",
+          "distance": 1.0,
+          "end": "End"
+        },
+      },
+      "Bendorsey_Brewery_Upgrade_Site": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N121_to_Bird_Branch_N122",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N121_to_Bird_Branch_N122",
+          "distance": 1.0,
+          "end": "End"
+        },
+      },
+      "Birdtown_Bridge_Site": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N5_to_Bird_Branch_N6",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N5_to_Bird_Branch_N6",
+          "distance": 1.0,
+          "end": "End"
+        },
+      },
+      "BirdTown_Repair_Track_1": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N71_to_Bird_Branch_N72",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N71_to_Bird_Branch_N72",
+          "distance": 1.0,
+          "end": "End"
+        }
+      },
+      "BirdTown_Repair_Track_2": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N73_to_Bird_Branch_N74",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N73_to_Bird_Branch_N74",
+          "distance": 1.0,
+          "end": "End"
+        }
+      }
+    }
+  },
+  // buggy fix to add the spans to whittier repair facility
+  "areas": {
+    "whittier": {
+      "industries": {
+        "wh-e-engine": {
+          "components": {
+            // adding it to an existing repair component works
+            "rip": {
+              "trackSpans": [
+                {
+                  "$add": "BirdTown_Repair_Track_2"
+                },
+                {
+                  "$add": "BirdTown_Repair_Track_1"
+                }
+              ]
+            },
+          }
+        }
+      }
+    },
+    "ela": {
+      "industries": {
+        // Nicks Birdtown Branch Line
+        "bendorsey_brewery": {
+          "components": {
+            "Bendorsey_Brewery_Malt_Unloading": {
+              "name": "Bendorsey Brewery R1 / R2"
+            },
+            "Bendorsey_Brewery_Hops_Unloading": {
+              "name": "Bendorsey Brewery R1 / R2"
+            },
+            "Bendorsey_Brewery_Grain_Unloading": {
+              "name": "Bendorsey Brewery R1 / R2"
+            },
+          }
+        },
+        "Birdtown_House_Track": {
+          "components": {
+            "Birdtown_House_Track_Gasoline_Unloading": {
+              "name": "Birdtown House Track R1"
+            },
+            "Birdtown_House_Track_Lumber_Unloading": {
+              "name": "Birdtown House Track R1"
+            },
+            "Birdtown_House_Track_Misc_Unloading": {
+              "name": "Birdtown House Track R1"
+            }
+          }
+        },
+        "Ela_Slaughterhouse": {
+          "components": {
+            "Ela_Slaugherhouse_Livestock_Unloading": {
+              "name": "Ela Slaughterhouse B1"
+            },
+            "Ela_Slaugherhouse_Meat_Loading": {
+              "name": "Ela Slaughterhouse B1"
+            }
+          }
+        },
+        "Birdtown_Bridge": {
+          "name": "Birdtown Bridge Site",
+          "localPosition": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "usesContract": false,
+          "components": {
+            "site": {
+              "name": "Birdtown Bridge Site",
+              "type": "Model.OpsNew.ProgressionIndustryComponent",
+              "carTypeFilter": "*",
+              "sharedStorage": true,
+              "trackSpans": [
+                "Birdtown_Bridge_Site"
+              ]
+            }
+          }
+        },
+        "Bendorsey_Brewery_Construction": {
+          "localPosition": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "usesContract": false,
+          "name": "Bendorsey Brewery Construction",
+          "components": {
+            "repair-site": {
+              "name": "Bendorsey Brewery Repair site",
+              "type": "Model.OpsNew.ProgressionIndustryComponent",
+              "carTypeFilter": "*",
+              "sharedStorage": true,
+              "trackSpans": [
+                "Bendorsey_Brewery_Repair_Site"
+              ]
+            },
+            "yard-site": {
+              "name": "Bendorsey Brewery Yard site",
+              "type": "Model.OpsNew.ProgressionIndustryComponent",
+              "carTypeFilter": "*",
+              "sharedStorage": true,
+              "trackSpans": [
+                "Bendorsey_Brewery_Repair_Site"
+              ]
+            },
+            "upgrade-site": {
+              "name": "Bendorsey Brewery Upgrade site",
+              "type": "Model.OpsNew.ProgressionIndustryComponent",
+              "carTypeFilter": "*",
+              "sharedStorage": true,
+              "trackSpans": [
+                "Bendorsey_Brewery_Upgrade_Site"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
