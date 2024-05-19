@@ -2,11 +2,11 @@
     "manifestVersion": 5,
     "id": "TarekZhort.NicksBirdtownProgressionAddOn",
     "name": "TarekZhort Progression AddOn for NickB Birdtown",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "requires": [
         {
             "id": "railloader",
-            "notBefore": "1.7.2"
+            "notBefore": "1.7.99.0"
         },
         {
             "id": "Zamu.StrangeCustoms",
@@ -31,5 +31,6 @@
             "file(PatchTrackspans.json)"
         ],
         "progressions": "file(AddProgressions.json)",
-    }
+    },
+    "updateUrl": "https://raw.githubusercontent.com/TarekZhort/RR-BirdtownProgression/main/updates.json"
 }

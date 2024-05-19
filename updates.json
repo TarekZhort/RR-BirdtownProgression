@@ -1,0 +1,23 @@
+{
+  "TarekZhort.NicksBirdtownProgressionAddOn": {
+    "version": "1.1.0",
+    "changelog": [
+      {
+        "version": "1.1.0",
+        "desc": "- Updated RailLoader dependancy to V 1.7.99.0 \n -Added update check"
+      },
+      {
+        "version": "1.0.0",
+        "desc": "- Addded repair capabilities to repair facility in Birdtown, this is linked to the Whittier Engine Service Industry."
+      },
+      {
+        "version": "0.5.1",
+        "desc": "- Fixed name for Ela_Slaughterhouse Loading component to the correct name"
+      },
+      {
+        "version": "0.5.0",
+        "desc": "- Added multilple progression steps to the Birdtown mod by NickB. These include: \n  - A 3 step rebuild of the bridge between Ela and Birdtown\n  - A build step to connect the Bendorsey Brewery and Ela Slaughterhouse to the town of Ela\n  - A build step to add the yard in Ela for use by either the local industries or as a staging platform for the branchline\n  - A build step to add additional track for more convenience to the Brewery\n - Renamed unloading / loading locations to not have multiple names for the same trackspans. These changes are display changes only.\n  - Renamed Bendorsey Brewery Malt, Hops and Grain unloading locations to Bendorsey Brewery R1 / R2\n  - Renamed Birdtown House track Gasoline, Lumber and Misc unloading locations to Birdtown House Track R1\n  - Renamed Ela Slaughterhouse Livestock Unloading and Ela Slaughterhouse Livestock Loading to Ela Slaughterhouse B1\n"
+      }
+    ]
+  }
+}
