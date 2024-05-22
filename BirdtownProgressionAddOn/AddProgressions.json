@@ -10,10 +10,6 @@
       "unlockExcludeIndustries": {
         "bendorsey_brewery": true,
         "Ela_Slaughterhouse": true,
-        "Birdtown_Iron_Ore_Mine": true,
-        "Birdtown_House_Track": true,
-        "Atlas_Sulfuric_Acid": true,
-        "A.L._Cooke_Coal_Merchants_(Birdtown)": true,
         "Birdtown_Bridge": true,
         "Bendorsey_Brewery_Construction": true
       },
@@ -52,7 +48,7 @@
       "prerequisites": {
         "wh-el": true
       },
-      "areasEnableOnUnlock": {},
+      "areasEnableOnUnlock": {"birdtown":true},
       "defaultEnableInSandbox": true,
       "displayName": "Birdtown Branchline",
       "gameObjectsEnableOnUnlock": {},
@@ -64,12 +60,7 @@
         "birdtown-bridge": true
       },
       "unlockExcludeIndustries": {},
-      "unlockIncludeIndustries": {
-        "Birdtown_Iron_Ore_Mine": true,
-        "Birdtown_House_Track": true,
-        "Atlas_Sulfuric_Acid": true,
-        "A.L._Cooke_Coal_Merchants_(Birdtown)": true
-      },
+      "unlockIncludeIndustries": {      },
       "unlockIncludeIndustryComponents": {}
     },
     "bendorsey-brewery-runaround": {

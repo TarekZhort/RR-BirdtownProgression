@@ -1,0 +1,20 @@
+{
+  "areas": {
+    "birdtown": {
+      "name": "Birdtown Branch Line & Industries",
+      "tagColor": [
+        0.68,
+        1.0,
+        1.0
+      ],
+      "position": {
+        "x": 10302.04,
+        "y": 580.12,
+        "z": 7784.59
+      },
+      "order": 610,
+      "radius": 0,
+      "industries": {}
+    }
+  }
+}

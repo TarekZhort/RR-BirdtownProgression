@@ -1,0 +1,14 @@
+{
+  "splineys": {
+    "TZ_Birdtown_Yard_Poles": {
+      "handler": "AlinasMapMod.TelegraphPoleBuilder",
+      "polesToRaise": [
+        375,
+        373,
+        371,
+        369,
+        367
+      ]
+    }
+  }
+}

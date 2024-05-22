@@ -72,25 +72,58 @@
           "distance": 1.0,
           "end": "End"
         }
+      },
+      "BirdTown_Repair_Track_3": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N79_to_Bird_Branch_N80",
+          "distance": 1.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N79_to_Bird_Branch_N80",
+          "distance": 1.0,
+          "end": "End"
+        }
       }
     }
   },
-  // buggy fix to add the spans to whittier repair facility
   "areas": {
-    "whittier": {
+    "birdtown": {
       "industries": {
-        "wh-e-engine": {
+        "birdtown-engine": {
+          "name": "Birdtown Engine Service",
+          "localPosition": {
+            "x": 372.414063,
+            "y": 0.675109863,
+            "z": -1022.07861
+          },
+          "usesContract": false,
           "components": {
-            // adding it to an existing repair component works
-            "rip": {
+            "repair": {
+              "type": "Model.OpsNew.RepairTrack",
+              "name": "Birdtown Repair Tracks",
               "trackSpans": [
-                {
-                  "$add": "BirdTown_Repair_Track_2"
-                },
-                {
-                  "$add": "BirdTown_Repair_Track_1"
-                }
-              ]
+                "BirdTown_Repair_Track_1",
+                "BirdTown_Repair_Track_2",
+                "BirdTown_Repair_Track_3"
+              ],
+              "carTypeFilter": "P*,N*,X*,F*,H*,G*,T*,L*,N*",
+              "sharedStorage": true
+            },
+            "repair-parts": {
+              "type": "Model.OpsNew.IndustryUnloader",
+              "name": "Birdtown Repair Parts R1",
+              "trackSpans": [
+                "BirdTown_Repair_Track_3"
+              ],
+              "carTypeFilter": "XM",
+              "sharedStorage": true,
+              "loadId": "repair-parts",
+              "storageChangeRate": 0.0,
+              "maxStorage": 100000.0,
+              "orderAroundEmpties": false,
+              "carTransferRate": 100000.0,
+              "orderAroundLoaded": false
             }
           }
         }
@@ -99,6 +132,44 @@
     "ela": {
       "industries": {
         // Nicks Birdtown Branch Line
+        "Birdtown_House_Track": {
+          "$moveto": "areas.birdtown.industries",
+          "components": {
+            "Birdtown_House_Track_Gasoline_Unloading": {
+              "name": "Birdtown House Track R1"
+            },
+            "Birdtown_House_Track_Lumber_Unloading": {
+              "name": "Birdtown House Track R1"
+            },
+            "Birdtown_House_Track_Misc_Unloading": {
+              "name": "Birdtown House Track R1"
+            }
+          }
+        },
+        "Birdtown_Iron_Ore_Mine": {
+          "$moveto": "areas.birdtown.industries"
+        },
+        "A.L._Cooke_Coal_Merchants_(Birdtown)": {
+          "$moveto": "areas.birdtown.industries",
+          "name":"A.L. Cooke Coal Merchants"
+        },
+        "Atlas_Sulfuric_Acid": {
+          "$moveto": "areas.birdtown.industries",
+          "components": {
+            "Atlas_Pyrite_Unloading": {
+              "name": "Atlas Sulfuric Acid B1"
+            },
+            "Atlas_Sodium_Nitrate_Unloading": {
+              "name": "Atlas Sulfuric Acid B1"
+            },
+            "Atlas_Water_Unloading": {
+              "name": "Atlas Sulfuric Acid B1"
+            },
+            "Atlas_Sulfuric_Acid_Loading": {
+              "name": "Atlas Sulfuric Acid B1"
+            }
+          }
+        },
         "bendorsey_brewery": {
           "components": {
             "Bendorsey_Brewery_Malt_Unloading": {
@@ -112,19 +183,6 @@
             }
           }
         },
-        "Birdtown_House_Track": {
-          "components": {
-            "Birdtown_House_Track_Gasoline_Unloading": {
-              "name": "Birdtown House Track R1"
-            },
-            "Birdtown_House_Track_Lumber_Unloading": {
-              "name": "Birdtown House Track R1"
-            },
-            "Birdtown_House_Track_Misc_Unloading": {
-              "name": "Birdtown House Track R1"
-            }
-          }
-        },
         "Ela_Slaughterhouse": {
           "components": {
             "Ela_Slaugherhouse_Livestock_Unloading": {
@@ -132,22 +190,6 @@
             },
             "Ela_Slaugherhouse_Meat_Loading": {
               "name": "Ela Slaughterhouse B1"
-            }
-          }
-        },
-        "Atlas_Sulfuric_Acid": {
-          "components": {
-            "Atlas_Pyrite_Unloading": {
-              "name": "Atlas Sulfuric Acid B1"
-            },
-            "Atlas_Sodium_Nitrate_Unloading": {
-              "name": "Atlas Sulfuric Acid B1"
-            },
-            "Atlas_Water_Unloading": {
-              "name": "Atlas Sulfuric Acid B1"
-            },
-            "Atlas_Sulfuric_Acid_Loading": {
-              "name": "Atlas Sulfuric Acid B1"
             }
           }
         },
