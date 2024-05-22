@@ -135,6 +135,22 @@
             }
           }
         },
+        "Atlas_Sulfuric_Acid": {
+          "components": {
+            "Atlas_Pyrite_Unloading": {
+              "name": "Atlas Sulfuric Acid B1"
+            },
+            "Atlas_Sodium_Nitrate_Unloading": {
+              "name": "Atlas Sulfuric Acid B1"
+            },
+            "Atlas_Water_Unloading": {
+              "name": "Atlas Sulfuric Acid B1"
+            },
+            "Atlas_Sulfuric_Acid_Loading": {
+              "name": "Atlas Sulfuric Acid B1"
+            }
+          }
+        },
         "Birdtown_Bridge": {
           "name": "Birdtown Bridge Site",
           "localPosition": {
