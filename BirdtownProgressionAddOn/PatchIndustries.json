@@ -11,7 +11,19 @@
           "segmentId": "SAN_NB_Bird_Branch_N98_to_Bird_Branch_N99",
           "distance": 1.0,
           "end": "End"
+        }
+      },
+      "Bendorsey_Brewery_Yard_Site": {
+        "upper": {
+          "segmentId": "SAN_NB_Bird_Branch_N98_to_Bird_Branch_N99",
+          "distance": 1.0,
+          "end": "Start"
         },
+        "lower": {
+          "segmentId": "SAN_NB_Bird_Branch_N98_to_Bird_Branch_N99",
+          "distance": 1.0,
+          "end": "End"
+        }
       },
       "Bendorsey_Brewery_Upgrade_Site": {
         "upper": {
@@ -23,7 +35,7 @@
           "segmentId": "SAN_NB_Bird_Branch_N121_to_Bird_Branch_N122",
           "distance": 1.0,
           "end": "End"
-        },
+        }
       },
       "Birdtown_Bridge_Site": {
         "upper": {
@@ -35,7 +47,7 @@
           "segmentId": "SAN_NB_Bird_Branch_N5_to_Bird_Branch_N6",
           "distance": 1.0,
           "end": "End"
-        },
+        }
       },
       "BirdTown_Repair_Track_1": {
         "upper": {
@@ -79,7 +91,7 @@
                   "$add": "BirdTown_Repair_Track_1"
                 }
               ]
-            },
+            }
           }
         }
       }
@@ -130,7 +142,7 @@
               "carTypeFilter": "*",
               "sharedStorage": true,
               "trackSpans": [
-                "Bendorsey_Brewery_Repair_Site"
+                "Bendorsey_Brewery_Yard_Site"
               ]
             },
             "upgrade-site": {

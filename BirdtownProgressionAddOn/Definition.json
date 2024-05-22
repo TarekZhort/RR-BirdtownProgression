@@ -6,7 +6,7 @@
     "requires": [
         {
             "id": "railloader",
-            "notBefore": "1.7.99.0"
+            "notBefore": "1.8.1.1"
         },
         {
             "id": "Zamu.StrangeCustoms",
@@ -14,24 +14,19 @@
         },
         {
             "id": "nickb.nicksbirdtownbranchline",
-            "notBefore": "1.3",
+            "notBefore": "1.3"
         },
         {
-            "id": "NickB.TheStandardCatalogofLoadIDs",
-            "notBefore": "3.4"
-          },
-          {
             "id": "AlinaNova21.AlinasMapMod",
             "notBefore": "1.3.24087.634"
-          },
+        }
     ],
-    "loadAfter":["nickb.nicksbirdtownbranchline"],
     "mixintos": {
         "game-graph": [
             "file(PatchIndustries.json)",
             "file(PatchTrackspans.json)"
         ],
-        "progressions": "file(AddProgressions.json)",
+        "progressions": "file(AddProgressions.json)"
     },
     "updateUrl": "https://raw.githubusercontent.com/TarekZhort/RR-BirdtownProgression/main/updates.json"
 }

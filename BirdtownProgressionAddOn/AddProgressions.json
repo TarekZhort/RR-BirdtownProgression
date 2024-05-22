@@ -122,10 +122,10 @@
       "displayName": "Ela Yard",
       "gameObjectsEnableOnUnlock": {},
       "trackGroupsAvailableOnUnlock": {
-        "ela-yard": true,
+        "ela-yard": true
       },
       "trackGroupsEnableOnUnlock": {
-        "ela-yard": true,
+        "ela-yard": true
       },
       "unlockExcludeIndustries": {},
       "unlockIncludeIndustries": {},
@@ -141,7 +141,7 @@
       "displayName": "Ela yard Headshunt",
       "gameObjectsEnableOnUnlock": {},
       "trackGroupsAvailableOnUnlock": {
-        "ela-yard-extention": true,
+        "ela-yard-extention": true
       },
       "trackGroupsEnableOnUnlock": {
         "ela-yard-extention": true
@@ -149,7 +149,7 @@
       "unlockExcludeIndustries": {},
       "unlockIncludeIndustries": {},
       "unlockIncludeIndustryComponents": {}
-    },
+    }
   },
   // this is for company mode
   "progressions": {
@@ -210,7 +210,7 @@
                   "count": 1,
                   "load": "rails",
                   "carTypeFilter": "FM*"
-                },
+                }
               ],
               "cost": 1500,
               "industryComponent": "Bendorsey_Brewery_Construction.repair-site"
@@ -263,7 +263,7 @@
                   "count": 2,
                   "load": "rails",
                   "carTypeFilter": "FM*"
-                },
+                }
               ],
               "cost": 1000,
               "industryComponent": "Bendorsey_Brewery_Construction.yard-site"
