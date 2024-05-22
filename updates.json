@@ -4,7 +4,7 @@
     "changelog": [
       {
         "version": "1.1.3",
-        "desc": "- Updated RailLoader dependancy to V 1.8.1.1 to fix loading of mod before NicksBirdtown \n - Readded combined names for same unloading / loading trackspans \n - Moved Ela yard expantion buildsite  \n - Removed unnessecairy dependancy for LoadIds \n - Fixed json formatting; removing trailing commas"
+        "desc": "- Updated RailLoader dependancy to V 1.8.1.1 to fix loading of mod before NicksBirdtown \n - Readded combined names for same unloading / loading trackspans \n - Moved Ela yard expansion buildsite  \n - Removed unnessecairy dependancy for LoadIds \n - Fixed json formatting; removing trailing commas"
       },
       {
         "version": "1.1.2",
