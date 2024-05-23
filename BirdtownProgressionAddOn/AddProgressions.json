@@ -22,9 +22,7 @@
     },
     "bendorsey-brewery": {
       "description": "Enable the track for the Bendorsey Brewery",
-      "prerequisites": {
-        "wh-el": true
-      },
+      "prerequisites": {},
       "areasEnableOnUnlock": {},
       "defaultEnableInSandbox": true,
       "displayName": "Ela Brewery track",
@@ -45,10 +43,10 @@
     },
     "birdtown": {
       "description": "Enable the Birdtown branchline",
-      "prerequisites": {
-        "wh-el": true
+      "prerequisites": {},
+      "areasEnableOnUnlock": {
+        "birdtown": true
       },
-      "areasEnableOnUnlock": {"birdtown":true},
       "defaultEnableInSandbox": true,
       "displayName": "Birdtown Branchline",
       "gameObjectsEnableOnUnlock": {},
@@ -60,14 +58,12 @@
         "birdtown-bridge": true
       },
       "unlockExcludeIndustries": {},
-      "unlockIncludeIndustries": {      },
+      "unlockIncludeIndustries": {},
       "unlockIncludeIndustryComponents": {}
     },
     "bendorsey-brewery-runaround": {
       "description": "Enable the runaround track for the Bendorsey Brewery",
-      "prerequisites": {
-        "bendorsey-brewery": true
-      },
+      "prerequisites": {},
       "areasEnableOnUnlock": {},
       "defaultEnableInSandbox": true,
       "displayName": "Ela Brewery runaround track",
@@ -84,9 +80,7 @@
     },
     "bendorsey-brewery-crossing": {
       "description": "Enable the brewery crossing tracks for easy access to the beer outputs",
-      "prerequisites": {
-        "bendorsey-brewery": true
-      },
+      "prerequisites": {},
       "areasEnableOnUnlock": {},
       "defaultEnableInSandbox": true,
       "displayName": "Brewery Beer Loading",
@@ -103,9 +97,7 @@
     },
     "ela-yard": {
       "description": "Add a yard to Ela",
-      "prerequisites": {
-        "bendorsey-brewery": true
-      },
+      "prerequisites": {},
       "areasEnableOnUnlock": {},
       "defaultEnableInSandbox": true,
       "displayName": "Ela Yard",
@@ -122,9 +114,7 @@
     },
     "ela-yard-headshunt": {
       "description": "Add a headshunt to the Ela Yard",
-      "prerequisites": {
-        "ela-yard": true
-      },
+      "prerequisites": {},
       "areasEnableOnUnlock": {},
       "defaultEnableInSandbox": false,
       "displayName": "Ela yard Headshunt",
