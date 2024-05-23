@@ -1,7 +1,10 @@
 {
   "TarekZhort.NicksBirdtownProgressionAddOn": {
-    "version": "2.0.0",
+    "version": "2.0.1",
     "changelog": [
+      {
+        "version": "2.0.1",
+        "desc": "Bugfix for Brewery Beer Unloading not working" },
       {
         "version": "2.0.0",
         "desc": "** This is a new Major release with multiple dependency updates ** \n\n *DEPENCENCY UPDATES* \n\n - RailLoader [Beta V 1.8.1.1] \n - StrangeCustoms [V 1.6.24142.2228] \n - Alinas Map Mod [V 1.3.24142.1848] \n\n At the time of release all these mods are only available in the Railroader discord.\n\n * Changes *\n\n - Renamed all Atlas Sulfuric Acid unloading and loading locations to Atlas Sulfuric Acid B1 \n - Renamed A.L. Cooke Coal Merchants (Birdtown) industry to A.L. Cooke Coal Merchants. \n - Moved 'Altas Sulfuric Acid', 'Birdtown House track', 'A.L. Cooke Coal Merchants' and 'Birdtown Iron Ore Mine' to a new area called Birdtown \n - Added a repair shop to Birdtown with three repair tracks, the parts capacity is half the capacity of the Whittier engine facility. \n - Increased the height of powerpoles in Ela near the Brewery."

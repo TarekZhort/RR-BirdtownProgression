@@ -92,12 +92,10 @@
       "displayName": "Brewery Beer Loading",
       "gameObjectsEnableOnUnlock": {},
       "trackGroupsAvailableOnUnlock": {
-        "ela-brewery-crossing": true,
-        "ela-brewery-beer-extention": true
+        "ela-brewery-crossing": true
       },
       "trackGroupsEnableOnUnlock": {
-        "ela-brewery-crossing": true,
-        "ela-brewery-beer-extention": true
+        "ela-brewery-crossing": true
       },
       "unlockExcludeIndustries": {},
       "unlockIncludeIndustries": {},
