@@ -108,7 +108,9 @@
                 "BirdTown_Repair_Track_3"
               ],
               "carTypeFilter": "P*,N*,X*,F*,H*,G*,T*,L*,N*",
-              "sharedStorage": true
+              "sharedStorage": true,              
+              "loadId": "repair-parts",
+              "canOverhaul": true
             },
             "repair-parts": {
               "type": "Model.OpsNew.IndustryUnloader",

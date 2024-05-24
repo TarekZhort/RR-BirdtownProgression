@@ -6,7 +6,7 @@ This is an addon mod which adds progression stepa for NickB's mod: [Birdtown v1.
 
 - Railroader [The game](https://store.steampowered.com/app/1683150/Railroader/)
 - Zamus RailLoader [Beta V 1.8.1.1](https://railroader.stelltis.ch/) (for now only available on the railroader discord)
-- Zamus StrangeCustoms [Beta V 1.6.24142.2228](https://railroader.stelltis.ch/mods/strange-customs) (for now only available on the railroader discord)
+- Zamus StrangeCustoms  [normally found here](https://railroader.stelltis.ch/mods/strange-customs) (for now only available on the railroader discord) [Beta V 1.6.24144.2122](https://discord.com/channels/795878618697433097/1215150658596900906/1243313287932674049)
 - Alinas Map Mod [V 1.3.24142.1848](https://railroader.alinanova.dev/) only used for the progressions and moving of powerpoles No track from this mod is needed
 - Nick Bs Birdtown Branchline [V 1.3](https://sites.google.com/view/westerntrainzkgp/railroader-mods/nicks-birdtown-branch)
 
